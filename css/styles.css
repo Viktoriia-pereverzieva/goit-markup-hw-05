@@ -87,7 +87,7 @@ img {
     display: block;
     padding: 24px 0;
     position: relative;
-    transition: color ms cubic-bezier(0.4, 0, 0.2, 1)250;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)250;
 }
 
 .nav-list .link:hover,
@@ -579,7 +579,7 @@ flex-direction: row;
 
 .input-text::placeholder {
     font-family: "Roboto", sans-serif;
-    color #FFFFFF;     
+    color: #FFFFFF;     
 }
 
 .but-form {
@@ -704,7 +704,7 @@ input {
 
 
 
-.l-username {
+.l-label {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     line-height: 1.17;
@@ -714,41 +714,12 @@ input {
     display: block;
 }
 
-.l-phone {
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
-    margin-bottom: 4px;
-    display: block;
-}
-
-.l-email {
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
-    margin-bottom: 4px;
-    display: block;
-}
-
-.l-comment {
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    line-height: 14px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: #8E8F99;
-    margin-bottom: 4px;
-}
 
 .comment-label {
     margin-bottom: 16px;
 }
 
-.i-username {
+.input-wrapper .i-input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -760,33 +731,39 @@ input {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.i-username:focus {
+.i-input:focus {
     border-color: #4D5AE5;
 }
 
-.i-phone {
+.i-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    margin-bottom: 8px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+.i-input:focus {
+    border-color: #4D5AE5;
+}
+
+.i-input {
     width: 360px;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
     margin-bottom: 8px;
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    }
 
-.i-phone:focus {
-    border-color: #4D5AE5;
-}
-
-.i-email {
-    width: 360px;
-    height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    margin-bottom: 8px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.i-email:focus {
+.i-input:focus {
     border-color: #4D5AE5;
 }
 
@@ -810,7 +787,6 @@ input {
 .t-comment:focus {
     border-color: #4D5AE5;
 }
-
 
 .t-comment::placeholder {
     font-family: "Roboto", sans-serif;
@@ -843,7 +819,7 @@ input {
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: transpapent;
+    fill: transparent;
 }
 
 
@@ -865,7 +841,7 @@ input {
     position: relative;
 }
 
-.svg-username {
+.svg-class {
     position: absolute;
     top: 50%;
     left: 16px;
@@ -873,7 +849,7 @@ input {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.i-username:focus + .svg-username {
+.i-input:focus + .svg-class {
     fill: #4D5AE5;
 }
 
@@ -883,36 +859,11 @@ input {
         border: 1px solid #ccc;
         border-radius: 6px;
 }
-.svg-phone {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    fill: #2E2F42;
-    pointer-events: none;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.i-phone:focus+.svg-phone {
-    fill: #4D5AE5;
-}
-
-.svg-email {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    fill: #2E2F42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.i-email:focus+.svg-email {
-    fill: #4D5AE5;
-}
 
 .b-form {
     display: block;
-    margin: 24px 120px;
+    margin: 24px 96px;
     min-width: 169px;
     height: 56px;
     border-radius: 4px;
