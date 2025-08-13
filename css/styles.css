@@ -556,11 +556,11 @@ flex-direction: row;
     margin-bottom: 16px;
 }
 
-.container-form {
+.form-footer {
     display: flex;
     gap: 24px;
-    align-items: center;
 }
+
 
 .input-text {
     width: 264px;
@@ -583,7 +583,7 @@ flex-direction: row;
 }
 
 .but-form {
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     display: flex;
     align-items: center;
@@ -703,41 +703,39 @@ input {
 }
 
 
+
 .l-username {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8E8F99;  
-    margin-bottom: 4px; 
+    color: #8E8F99;
+    margin-bottom: 4px;
     display: block;
 }
 
 .l-phone {
-    font-family: "Roboto",sans-serif;
-    font-weight: 400;
+    font-family: "Roboto", sans-serif;
     font-size: 12px;
-    line-height: 14px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
     margin-bottom: 4px;
+    display: block;
 }
 
 .l-email {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
     margin-bottom: 4px;
+    display: block;
 }
 
 .l-comment {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     line-height: 1.16667;
@@ -821,6 +819,10 @@ input {
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     padding: 8px 16px;
+}
+
+.checkbox-field {
+    margin-bottom: 24px;
 }
 
 .label-p {
