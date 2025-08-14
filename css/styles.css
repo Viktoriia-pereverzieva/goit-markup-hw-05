@@ -864,7 +864,7 @@ input {
 
 .b-form {
     display: block;
-    margin: 24px 96px;
+    margin: 0 auto;
     min-width: 169px;
     height: 56px;
     border-radius: 4px;
